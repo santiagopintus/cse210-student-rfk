@@ -15,4 +15,5 @@ class Action:
         Args:
             cast (dict): The game actors {key: tag, value: list}.
         """
+        pass
         raise NotImplementedError("execute not implemented in superclass")

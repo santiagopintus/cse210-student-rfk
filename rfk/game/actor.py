@@ -9,6 +9,7 @@ class Actor:
         Information Holder
 
     Attributes:
+        _description (string): The actor's description.
         _tag (string): The actor's tag.
         _text (string): The textual representation of the actor.
         _position (Point): The actor's position in 2d space.
@@ -18,6 +19,7 @@ class Actor:
     def __init__(self):
         """The class constructor."""
         self._description = ""
+        self._tag = ""
         self._text = ""
         self._position = Point(0, 0)
         self._velocity = Point(0, 0)
@@ -61,6 +63,14 @@ class Actor:
             description (string): The given description.
         """
         self._description = description
+
+    def set_tag(self, tag):
+        """Updates the actor's tag to the given one.
+        
+        Args:
+            tag (string): The given tag.
+        """
+        self._tag = tag
 
     def set_position(self, position):
         """Updates the actor's position to the given one.
